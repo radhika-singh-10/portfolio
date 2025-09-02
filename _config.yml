@@ -1,0 +1,23 @@
+# --- Site basics ---
+title: "Radhika Singh"
+description: "Portfolio"
+url: "https://radhika-singh-10.github.io"   # no trailing slash
+baseurl: "/portfolio"                        # repo name for project sites
+
+# --- Build options ---
+markdown: kramdown
+theme: minima   # or comment this out if you keep your own layout
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata  # gives you site.github.*
+
+# Optional: nice defaults so any *.html/markdown becomes a page
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude:
+  - node_modules
+  - README.md
