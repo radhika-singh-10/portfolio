@@ -131,8 +131,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #0b0f19;
   overflow-y: auto;
+  border-right: 1px solid rgba(255,255,255,0.05);
 }
 
 #header .profile img {
@@ -140,6 +141,12 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+  transition: all 0.3s ease;
+}
+
+#header .profile img:hover {
+  transform: scale(1.05);
+  border-color: #149ddd;
 }
 
 #header .profile h1 {
@@ -503,6 +510,13 @@ section {
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.resume .resume-item:hover {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border-radius: 0 10px 10px 0;
 }
 
 .resume .resume-item h4 {
