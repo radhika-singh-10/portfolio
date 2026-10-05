@@ -1,6 +1,6 @@
 # --- Site basics ---
 title: "Radhika Singh"
-description: "Portfolio"
+description: "AI software engineering portfolio for agentic AI, LLM inference, backend platforms, and secure software supply-chain automation."
 url: "https://radhika-singh-10.github.io"   # no trailing slash
 baseurl: "/portfolio"                        # repo name for project sites
 
