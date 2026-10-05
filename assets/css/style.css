@@ -1453,10 +1453,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .resume .resume-item li strong { font-weight: 700; color: #0b1b33; }
 .resume .resume-item.current::before { background: #149ddd; border-color: #149ddd; box-shadow: 0 0 0 5px rgba(20, 157, 221, 0.22); }
 
+/* Contact buttons: darker fills so white labels stay readable (4.5:1 or better) */
+.contact-actions .btn-success { background: #1e7e34; border-color: #1e7e34; color: #fff; }
+.contact-actions .btn-primary { background: #0b5ed7; border-color: #0b5ed7; color: #fff; }
+.contact-actions .btn-info { background: #0f7587; border-color: #0f7587; color: #fff; }
+.contact-actions .btn:hover { filter: brightness(1.12); color: #fff; text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Dark theme
 --------------------------------------------------------------*/
-:root[data-theme="dark"] body { background: #0f1420; color: #d3dae8; }
+:root[data-theme="dark"] body { background: #0f1420; color: #f4f7fd; }
 :root[data-theme="dark"] .section-bg { background: #131a2a; }
 
 :root[data-theme="dark"] .section-title h2,
@@ -1494,6 +1500,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 :root[data-theme="dark"] .skills-legend .skill-chip { background: rgba(76, 194, 241, 0.14); border-color: #4cc2f1; color: #d4f1fc; }
 
 :root[data-theme="dark"] .theme-toggle { border-color: rgba(255, 255, 255, 0.35); }
+
+/* Catch-all: in dark mode all text inside the page content is white, whatever older rules say. */
+:root[data-theme="dark"] #main { color: #f4f7fd; }
+:root[data-theme="dark"] #main :is(h1, h2, h3, h4, h5, h6, p, li, span, em, strong, label, small) { color: inherit; }
+:root[data-theme="dark"] #main .skill-chip.recent { color: #ffffff; }
+:root[data-theme="dark"] #main .project-link { color: #8ec8ff; }
+:root[data-theme="dark"] #main .filter-btn.active { color: #0b0f19; }
+:root[data-theme="dark"] #main .filter-btn.active span { color: inherit; }
+:root[data-theme="dark"] #main a:not(.btn):not(.project-link) { color: #8ec8ff; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
