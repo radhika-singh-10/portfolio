@@ -1,45 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-<!--
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Radhika Singh</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    
-    <link href="" rel="icon">
-   
-
-    
-    <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-            rel="stylesheet">
-
-
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-
-    <link href="assets/css/style.css" rel="stylesheet">
-
-     =======================================================
-    * Template Name: iPortfolio - v1.4.1
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== 
-</head>
--->
 <head>
   <meta charset="utf-8">
   <!-- Safe area for iPhone notch + proper scaling -->
@@ -52,9 +12,24 @@
   <!-- iOS link detection (we’ll add explicit tel/mail links instead) -->
   <meta name="format-detection" content="telephone=no, email=no, address=no">
 
-  <title>Radhika Singh</title>
+  <title>Radhika Singh - AI Software Engineer</title>
   <meta name="description" content="Radhika Singh - AI Software Engineer building agentic AI systems, LLM inference platforms, secure supply-chain automation, and scalable backend products.">
   <meta name="keywords" content="Radhika Singh, AI software engineer, agentic AI, LLM inference, MCP, RAG, software supply chain security, backend engineering, portfolio">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Radhika Singh - AI Software Engineer">
+  <meta property="og:description" content="Agentic AI systems, LLM inference platforms, and secure software supply-chain automation.">
+  <meta property="og:image" content="https://radhika-singh-10.github.io/portfolio/assets/img/RadhikaSingh.png">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
 
   <!-- Favicons -->
   <!--<link rel="icon" href="assets/img/favicon.png">
@@ -69,8 +44,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Main CSS -->
@@ -79,23 +52,29 @@
 
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======= Theme toggle ======= -->
+<button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme" title="Toggle light/dark theme">
+  <i class="bx bx-moon" aria-hidden="true"></i>
+</button>
+
 <!-- ======= Mobile nav toggle button ======= -->
-<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+<button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Open navigation"><i class="icofont-navigation-menu"></i></button>
 
 <!-- ======= Header ======= -->
 <header id="header">
     <div class="d-flex flex-column">
         <div class="profile">
             <img src="assets/img/RadhikaSingh.png" alt="" class="img-fluid rounded-circle">
-            <h1 class="text-light"><a href="index.html"><h1 id="title">Radhika Singh</h1>
-							</a></h1>
-              <p class="text-light pl-4 ml-2"> AI Software Engineer</p>
+            <h1 class="text-light" id="title"><a href="index.html">Radhika Singh</a></h1>
+              <p class="text-light text-center"> AI Software Engineer</p>
             <div class="social-links mt-3 text-center">
-                <a href="https://www.linkedin.com/in/radhika-singh-10/" class="linkedin" target="_blank"><i
+                <a href="https://www.linkedin.com/in/radhika-singh-10/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                         class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/radhika-singh-10/" class="github" target="_blank"><i
+                <a href="https://github.com/radhika-singh-10/" class="github" target="_blank" rel="noopener" aria-label="GitHub"><i
                         class='bx bxl-github'></i></a>
-                 <a href="https://x.com/Radhika01586968" class="twitter" target="_blank"><i
+                 <a href="https://x.com/Radhika01586968" class="twitter" target="_blank" rel="noopener" aria-label="X (Twitter)"><i
                             class='bx bxl-twitter'></i></a>
                 
             </div>
@@ -115,15 +94,13 @@
 
             </ul>
         </nav><!-- .nav-menu -->
-        <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
     </div>
 </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-        <h1 style="text-align:center;">Radhika Singh</h1>
+        <h1>Radhika Singh</h1>
         <p> <span class="typed"
                        data-typed-items="AI Software Engineer @ Lineaje, Agentic AI + MCP Workflows, LLM Inference Optimization, Secure Software Supply Chain AI, Backend + Cloud Platforms, Ex-Software Engineer @ Dell Technologies"></span>
         </p>
@@ -168,9 +145,11 @@
                         </div>
                         <div class="col-lg-6">
                             <ul>
-                              <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> (716)910-7687</li>
-                              <li><i class="icofont-rounded-right"></i> <strong>Email:</strong>
-                                radhika.singh.10.01.98@gmail.com
+                              <li><i class="icofont-rounded-right"></i> <strong>Open to:</strong>
+                                AI Software Engineer, AI Infrastructure, Backend/Platform, and Forward Deployed Engineer roles
+                              </li>
+                              <li><i class="icofont-rounded-right"></i> <strong>Connect:</strong>
+                                <a href="https://www.linkedin.com/in/radhika-singh-10/" target="_blank" rel="noopener">LinkedIn</a>
                               </li>
                               <!-- <li><i class="icofont-rounded-right"></i> <strong>Citizen:</strong> Indian</li> -->
                             </ul>
@@ -205,16 +184,16 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                     <div class="count-box">
-                        <i class="icofont-ebook"></i>
-                        <span>4+</span>
+                        <i class="icofont-clock-time"></i>
+                        <span>5+</span>
                         <p><strong>Years</strong><br>Software engineering experience</p>
                     </div>
                 </div>
 
 		<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                     <div class="count-box">
-                        <i class="icofont-ebook"></i>
-                        <span>18</span>
+                        <i class="icofont-flash"></i>
+                        <span>~18</span>
                         <p><strong>Minutes Saved</strong><br>via parallel MCP agent workflows</p>
                     </div>
                 </div>
@@ -223,7 +202,7 @@
 
                 <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="count-box">
-                        <i class="icofont-paper"></i>
+                        <i class="icofont-users-alt-3"></i>
                         <span>1M+</span>
                         <p><strong>Developer Scale</strong><br>AI remediation workflows designed for enterprise reach</p>
                     </div>
@@ -232,9 +211,9 @@
              
                 <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                     <div class="count-box">
-                        <i class="icofont-ebook"></i>
+                        <i class="icofont-certificate"></i>
                         <span>1</span>
-                        <p><strong>Patent Filed</strong><br>Smart framework to auto-heal customer order experience issues</br></p>
+                        <p><strong>Patent Filed</strong><br>Smart framework to auto-heal customer order experience issues</p>
                     </div>
                 </div> 
             </div>
@@ -321,39 +300,11 @@
     <!-- ======= Skills End Section ======= -->
 
 
-    <!-- ======= Education Start Section ======= -->
-    <section id="education" class="resume">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education</h2>
-            </div>
-
-            <div class="row">
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Masters of Science - Computer Science</h4>
-                        <h5>2023 - 2025</h5>
-                        <p><em>State University of New York at Buffalo, NY - USA</em></p>
-                        <p>CGPA : 3.7/4.0</p>
-                        <p><strong>Focus:</strong> Research Track [AI Focus Area]</p>
-                        <p><strong>Capstone Project:</strong> Toxic In-Game Voice Chat Moderation using Multimodal LLMs.</p>
-                        <p><strong>Relevant Subjects:</strong> Analysis of Algorithms, Data Intensive Computing, Distributed Systems, Machine Learning, Computer Security, Deep Learning, Operating Systems, Reinforcement Learning, Computer Vision.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Bachelor of Technology - Computer Science</h4>
-                        <h5>2017 - 2021</h5>
-                        <p><em>Kalinga Institute of Industrial Technology, Bhubaneswar - India</em></p>
-                        <p>CGPA : 3.95/4.0</p>
-                        <p><strong>Activities:</strong> Mozilla Web Development Club.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ======= Education End Section ======= -->
 
 
-     <section id="internships" class="resume">
+
+    <!-- ======= Work Experience Section ======= -->
+    <section id="internships" class="resume">
         <div class="container">
             <div class="section-title">
                 <h2>Work Experience</h2>
@@ -450,7 +401,7 @@
                         <h5>2018 - 2019</h5>
                         <p><em>Software Engineer Intern</em></p>
                         <ul>
-                            <li>The monolithic React web application suffered from extremely slow load times. Leveraged lazy-loading concepts across the frontend architecture. Decreased the apparent load time of the application to near-zero (0.001ms).</li>
+                            <li>The monolithic React web application suffered from extremely slow load times. Split the bundle and lazy-loaded routes and components so the first screen rendered without waiting on the full application.</li>
                             <li>The weekly newsletter delivery was a highly manual workflow prone to delay. Automated the pipeline using Apache Airflow. Reduced manual effort by 90% and ensured 100% on-time delivery.</li>
                         </ul>
                     </div>
@@ -459,115 +410,145 @@
             </div>
 		</div>
 	 </section>
+    <!-- ======= Work Experience End ======= -->
+
 
 	
 
-	<!-- ======= Projects Section (same UX as Education/Work) ======= -->
+	<!-- ======= Projects Section ======= -->
 <section id="projects" class="resume">
   <div class="container">
     <div class="section-title">
       <h2>Projects</h2>
+      <p>Filter by area. Projects with a public repository link to the code.</p>
+    </div>
+
+    <div class="project-filters" role="group" aria-label="Filter projects by area">
+      <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI / ML</button>
+      <button type="button" class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+      <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false">Systems</button>
+      <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Security</button>
+      <button type="button" class="filter-btn" data-filter="research" aria-pressed="false">Research</button>
+      <span class="filter-count" id="filter-count" aria-live="polite"></span>
     </div>
 
     <div class="row">
-      <div class="col-lg-12" data-aos="fade-up">
-        <div class="resume-item">
+      <div class="col-lg-12" id="project-list">
+        <div class="resume-item project-item" data-tags="ai backend">
           <h4>ToolReliability</h4>
           <h5>2026</h5>
           <p><em>Multi-tenant agent evaluation and reliability platform</em></p>
           <ul><li>Designed a platform for evaluating AI agents across MCP/OpenAPI integrations, persistent run history, distributed execution, CI regression checks, observability, latency, reliability, and failure drill-down workflows.</li></ul>
+          <div class="project-meta"><span class="tag-chip">MCP</span><span class="tag-chip">OpenAPI</span><span class="tag-chip">CI</span><span class="tag-chip">Observability</span><a class="project-link" href="https://github.com/radhika-singh-10/ToolReliability" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for ToolReliability</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai backend">
           <h4>RepoGraph-AI</h4>
           <h5>2026</h5>
           <p><em>Repository intelligence and self-verifying code-change system</em></p>
           <ul><li>Built a React, TypeScript, FastAPI, Gemini API, MCP, and Tree-sitter system that analyzes 1,500+ source files with four validation gates, reducing unsafe AI code changes by 85% and manual review effort by 60%.</li></ul>
+          <div class="project-meta"><span class="tag-chip">React</span><span class="tag-chip">TypeScript</span><span class="tag-chip">FastAPI</span><span class="tag-chip">Tree-sitter</span><a class="project-link" href="https://github.com/radhika-singh-10/RepoGraph-AI" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for RepoGraph-AI</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai security">
           <h4>PromptStrike CLI</h4>
           <h5>2026</h5>
           <p><em>Agentic security evaluation harness</em></p>
           <ul><li>Developed a Python, Typer, Ollama, DeepSeek, Qwen, Pydantic, AST, and NetworkX CLI for graph-based SAST and human-in-the-loop prompt/security evaluation, reaching ~98% accuracy by reducing false positives.</li></ul>
+          <div class="project-meta"><span class="tag-chip">Python</span><span class="tag-chip">Ollama</span><span class="tag-chip">NetworkX</span><span class="tag-chip">SAST</span><a class="project-link" href="https://github.com/radhika-singh-10/PromptStrike-CLI" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for PromptStrike CLI</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai backend security">
           <h4>JEV-AS-LLM</h4>
           <h5>2026</h5>
           <p><em>LLM routing harness with guardrails</em></p>
           <ul><li>Created a production-style harness where an LLM routes requests across providers and models based on intent, content sensitivity, performance needs, moderation, and guardrail decisions.</li></ul>
+          <div class="project-meta"><span class="tag-chip">LLM routing</span><span class="tag-chip">Guardrails</span><span class="tag-chip">Moderation</span><a class="project-link" href="https://github.com/radhika-singh-10/JEV-AS-LLM" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for JEV-AS-LLM</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai security">
           <h4>LQL Generator</h4>
           <h5>2025 - 2026</h5>
           <p><em>Multi-agent natural language to security query generation</em></p>
           <ul><li>Built a LangGraph, AWS Bedrock Claude Sonnet 4, FastAPI, and FAISS-based multi-agent workflow using persona intent, entity recognition, LQL mapping, and retrieval validation to improve English-to-LQL accuracy by 30%.</li></ul>
+          <div class="project-meta"><span class="tag-chip">LangGraph</span><span class="tag-chip">Bedrock</span><span class="tag-chip">FAISS</span><span class="tag-chip">FastAPI</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>Toxic Voice Chat Moderation</h4>
           <h5>2024 - 2025</h5>
           <p><em>Multimodal safety research and evaluation</em></p>
           <ul><li>Evaluated GPT-4o-audio, Whisper, AWS Transcribe, Perspective API, and fine-tuned Llama-2 pipelines for moderating toxic in-game voice chat, with FastAPI-based testing and reproducible model comparison.</li></ul>
+          <div class="project-meta"><span class="tag-chip">GPT-4o-audio</span><span class="tag-chip">Whisper</span><span class="tag-chip">Llama-2</span><span class="tag-chip">FastAPI</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>DRL Portfolio Optimization</h4>
           <h5>2025</h5>
           <p><em>Reinforcement learning for financial portfolio allocation</em></p>
           <ul><li>Implemented PPO-based portfolio optimization on top S&amp;P 500 assets across 2005-2024, achieving 25.3% cumulative return and a 1.2774 Sharpe ratio in backtesting.</li></ul>
+          <div class="project-meta"><span class="tag-chip">PPO</span><span class="tag-chip">Reinforcement learning</span><span class="tag-chip">Backtesting</span><a class="project-link" href="https://github.com/radhika-singh-10/DRL" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for DRL Portfolio Optimization</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>EssayFish</h4>
           <h5>Apr 2025 - May 2025</h5>
           <p><em>Collaborators: Dheeraj Gundasani, Nageswara Rao Pasala, Arsalan Ali</em></p>
           <ul><li>AI-generated essay detection system using Stockfish-inspired behavioral metrics (IPR, z-score). Leverages Qwen, Mistral, and LLaMA models.</li></ul>
+          <div class="project-meta"><span class="tag-chip">Qwen</span><span class="tag-chip">Mistral</span><span class="tag-chip">LLaMA</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="systems backend">
           <h4>Raft Key-Value Store</h4>
           <h5>Mar 2025 - May 2025</h5>
           <p><em>Distributed key-value store</em></p>
           <ul><li>Distributed key-value store implemented in Go using the Raft consensus protocol for fault tolerance.</li></ul>
+          <div class="project-meta"><span class="tag-chip">Go</span><span class="tag-chip">Raft</span><span class="tag-chip">Consensus</span><a class="project-link" href="https://github.com/radhika-singh-10/Raft-Key-Value-Store" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for Raft Key-Value Store</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="systems backend">
           <h4>TrieSearchX</h4>
           <p><em>High-performance search</em></p>
           <ul><li>High-performance autocomplete search system (&lt;10ms) built with C++, MongoDB, and Cassandra, featuring a cache-optimized Trie and parallel query execution.</li></ul>
+          <div class="project-meta"><span class="tag-chip">C++</span><span class="tag-chip">MongoDB</span><span class="tag-chip">Cassandra</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai">
           <h4>PaperSnapAI</h4>
           <h5>Nov 2024 - Mar 2025</h5>
           <p><em>Research paper summarization tool</em></p>
           <ul><li>Lightweight research paper summarization tool built with Next.js, T5 model, and FastAPI.</li></ul>
+          <div class="project-meta"><span class="tag-chip">Next.js</span><span class="tag-chip">T5</span><span class="tag-chip">FastAPI</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>DeepShield</h4>
           <h5>Aug 2024 - Dec 2024</h5>
           <p><em>Collaborator: Nageswara Rao Pasala</em></p>
           <ul><li>Deepfake detection system utilizing Vision Transformers (ViT) and CNNs to identify image manipulations with confidence scores.</li></ul>
+          <div class="project-meta"><span class="tag-chip">ViT</span><span class="tag-chip">CNN</span><span class="tag-chip">Computer vision</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai">
           <h4>GestureAI</h4>
           <p><em>Collaborators: Dheeraj Gundasani, Pragnya Sree Ranganekar</em></p>
           <ul><li>Real-time American Sign Language (ASL) gesture recognition using MediaPipe and LSTM.</li></ul>
+          <div class="project-meta"><span class="tag-chip">MediaPipe</span><span class="tag-chip">LSTM</span><a class="project-link" href="https://github.com/radhika-singh-10/GestureAI-RealTimeHandGestureRecognition" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for GestureAI</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>Grid-World Gymnasium using RL</h4>
           <h5>Nov 2023 - Dec 2023</h5>
           <p><em>Collaborator: Dheeraj Gundasani</em></p>
           <ul><li>Custom RL environment following OpenAI Gym standards; solved using SARSA and Double Q-learning.</li></ul>
+          <div class="project-meta"><span class="tag-chip">Gymnasium</span><span class="tag-chip">SARSA</span><span class="tag-chip">Q-learning</span></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="ai research">
           <h4>ClimateSyncAI</h4>
           <p><em>Collaborator: Nageswara Rao Pasala</em></p>
           <ul><li>Global temperature trend analysis using K-Means clustering and SARIMAX time-series modeling for 13 city groups.</li></ul>
+          <div class="project-meta"><span class="tag-chip">K-Means</span><span class="tag-chip">SARIMAX</span><a class="project-link" href="https://github.com/radhika-singh-10/ClimateSyncAI" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for ClimateSyncAI</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="systems backend">
           <h4>NY-RailCon</h4>
           <p><em>Multi-region railway database</em></p>
           <ul><li>Multi-region, fault-tolerant railway management database built with CockroachDB.</li></ul>
+          <div class="project-meta"><span class="tag-chip">CockroachDB</span><span class="tag-chip">Docker Compose</span><a class="project-link" href="https://github.com/radhika-singh-10/NYRailSyncDB" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i> View code<span class="sr-only"> for NY-RailCon</span></a></div>
         </div>
-        <div class="resume-item">
+        <div class="resume-item project-item" data-tags="systems">
           <h4>Priority Scheduler using PintOS</h4>
           <h5>Feb 2024 - Mar 2024</h5>
           <p><em>Thread scheduling</em></p>
           <ul><li>Implemented priority donation, preemption, and aging for thread scheduling in the PintOS kernel.</li></ul>
+          <div class="project-meta"><span class="tag-chip">C</span><span class="tag-chip">PintOS</span><span class="tag-chip">Operating systems</span></div>
         </div>
       </div>
     </div>
@@ -575,218 +556,40 @@
 </section>
 <!-- ======= Projects End Section ======= -->
 
+    <!-- ======= Education Start Section ======= -->
+    <section id="education" class="resume">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+
+            <div class="row">
+                <div data-aos="fade-up">
+                    <div class="resume-item">
+                        <h4>Masters of Science - Computer Science</h4>
+                        <h5>2023 - 2025</h5>
+                        <p><em>State University of New York at Buffalo, NY - USA</em></p>
+                        <p>CGPA : 3.7/4.0</p>
+                        <p><strong>Focus:</strong> Research Track [AI Focus Area]</p>
+                        <p><strong>Capstone Project:</strong> Toxic In-Game Voice Chat Moderation using Multimodal LLMs.</p>
+                        <p><strong>Relevant Subjects:</strong> Analysis of Algorithms, Data Intensive Computing, Distributed Systems, Machine Learning, Computer Security, Deep Learning, Operating Systems, Reinforcement Learning, Computer Vision.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Bachelor of Technology - Computer Science</h4>
+                        <h5>2017 - 2021</h5>
+                        <p><em>Kalinga Institute of Industrial Technology, Bhubaneswar - India</em></p>
+                        <p>CGPA : 3.95/4.0</p>
+                        <p><strong>Activities:</strong> Mozilla Web Development Club.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Education End Section ======= -->
+
+
 			
-<!--
 
-   <section id="portfolio" class="portfolio section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Projects</h2>
-      <p class="text-muted">A few things I’ve built and shipped. Filter by area:</p>
-    </div>
-
-
-    <div class="d-flex gap-2 flex-wrap mb-4" id="portfolio-filters">
-      <button class="btn btn-sm btn-outline-primary active" data-filter="*">All</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".ai">AI/ML</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".backend">Backend</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".systems">Distributed Systems</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".frontend">Frontend</button>
-    </div>
-
-
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-
-      <div class="col-lg-4 col-md-6 portfolio-item ai frontend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="climate" href="assets/img/projects/climatesyncai-large.png" title="ClimateSyncAI">
-              <img src="assets/img/projects/climatesyncai-thumb.png" class="img-fluid" alt="ClimateSyncAI preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">ClimateSyncAI</h3>
-            <p class="project-summary">Time-series climate forecasting & anomaly detection with 13 SARIMAX clusters + Flask/Bootstrap dashboard.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">Python</span>
-              <span class="badge bg-light text-dark">SARIMAX</span>
-              <span class="badge bg-light text-dark">Flask</span>
-              <span class="badge bg-light text-dark">Docker</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="https://github.com/radhika-singh-10/ClimateSyncAI" target="_blank" class="btn btn-sm btn-primary">
-              <i class="bx bxl-github me-1"></i> Code
-            </a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projClimate">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 portfolio-item systems backend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="nyrail" href="assets/img/projects/nyrailsync-large.png" title="NYRailSyncDB">
-              <img src="assets/img/projects/nyrailsync-thumb.png" class="img-fluid" alt="NYRailSyncDB preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">NYRailSyncDB</h3>
-            <p class="project-summary">Geo-distributed railway DB with CockroachDB (Postgres syntax), REGIONAL BY ROW, 3-node Docker Compose.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">CockroachDB</span>
-              <span class="badge bg-light text-dark">PostgreSQL</span>
-              <span class="badge bg-light text-dark">Docker Compose</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projNYRail">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 portfolio-item ai backend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="toxic" href="assets/img/projects/toxic-voice-large.png" title="Toxic Voice Moderation">
-              <img src="assets/img/projects/toxic-voice-thumb.png" class="img-fluid" alt="Toxic voice moderation preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">In-Game Voice Moderation</h3>
-            <p class="project-summary">Multimodal LLM pipeline with audio classifiers (WavLM, DistilBERT), evaluation scripts, and FastAPI test harness.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">WavLM</span>
-              <span class="badge bg-light text-dark">DistilBERT</span>
-              <span class="badge bg-light text-dark">FastAPI</span>
-              <span class="badge bg-light text-dark">MLFlow</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projToxic">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 portfolio-item backend systems">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="tradeflow" href="assets/img/projects/tradeflow-large.png" title="TradeFlow">
-              <img src="assets/img/projects/tradeflow-thumb.png" class="img-fluid" alt="TradeFlow preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">TradeFlow</h3>
-            <p class="project-summary">Multi-algo trading bot: FastAPI + RabbitMQ + Redis Pub/Sub, MongoDB storage, Streamlit dashboards.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">Python</span>
-              <span class="badge bg-light text-dark">FastAPI</span>
-              <span class="badge bg-light text-dark">RabbitMQ</span>
-              <span class="badge bg-light text-dark">MongoDB</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projTradeFlow">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-  </div>
-</section>
-
-<div class="modal fade" id="projClimate" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">ClimateSyncAI</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <p>13 SARIMAX models clustered via K-Means; anomaly detection; Flask UI; Dockerized deploy. Improved forecast MAE by 17% vs baseline ARIMA.</p>
-      <ul class="mb-0">
-        <li>Stack: Python, Pandas, Statsmodels, Flask, Bootstrap</li>
-        <li>Infra: Docker, GitHub Actions (optional)</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="https://github.com/radhika-singh-10/ClimateSyncAI" target="_blank" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projNYRail" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">NYRailSyncDB</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>Multi-region CockroachDB cluster with Postgres-compatible schema; REGIONAL BY ROW; HA across 3 nodes via Docker Compose.</p>
-      <ul class="mb-0">
-        <li>Stack: CockroachDB, PostgreSQL syntax, Docker Compose</li>
-        <li>Focus: Availability, partitioning, strong consistency</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projToxic" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">In-Game Voice Moderation</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>Audio toxicity classification + LLM evaluation harness; measured precision/recall/F1; Fleiss’ Kappa for annotator agreement.</p>
-      <ul class="mb-0">
-        <li>Stack: WavLM, DistilBERT, FastAPI, MLflow</li>
-        <li>Focus: Safety, evaluation rigor, reproducibility</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projTradeFlow" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">TradeFlow</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>12+ concurrent strategies with RabbitMQ orchestration; Redis Pub/Sub for LTP stream; MongoDB archival; Streamlit dashboards.</p>
-      <ul class="mb-0">
-        <li>Stack: Python, FastAPI, RabbitMQ, Redis, MongoDB</li>
-        <li>Focus: Throughput, reliability, observability</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-</section>-->
 
     <section id="services" class="resume section-bg">
         <div class="container">
@@ -840,7 +643,7 @@
             <div class="section-title">
                 <h2>Resume & Contact</h2>
                 <p>
-                    AI Software Engineer with 4+ years of experience across agentic AI systems, LLM inference optimization,
+                    AI Software Engineer with 5+ years of experience across agentic AI systems, LLM inference optimization,
                     backend/platform engineering, cloud deployments, customer-facing delivery, and enterprise software
                     supply-chain security.
                 </p>
@@ -870,22 +673,15 @@
                 </div>
             </div>
 
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-success mr-2 mb-2"
-                        onclick="window.open ('assets/RadhikaSingh_Resume.pdf','_blank')">
-                    <div class="icon"><i class="icofont-download"></i>&nbsp Download Resume</div>
-                </button>
-                <button type="button" class="btn btn-primary mr-2 mb-2"
-                        onclick="window.open ('assets/RadhikaSingh_Resume.pdf','_blank')">
-                    <div class="icon"><i class="icofont-eye-alt"></i>&nbsp View Resume</div>
-                </button>
-                <button type="button" class="btn btn-info mb-2"
-                        onclick="window.open ('mailto:radhika.singh.10.01.98@gmail.com','_blank')">
-                    <div class="icon"><i class="icofont-envelope"></i>&nbsp Contact Me</div>
-                </button>
+            <div class="contact-actions">
+                <a class="btn btn-success" href="assets/RadhikaSingh_Resume.pdf" download><i class="icofont-download" aria-hidden="true"></i>&nbsp;Download resume</a>
+                <a class="btn btn-primary" href="assets/RadhikaSingh_Resume.pdf" target="_blank" rel="noopener"><i class="icofont-eye-alt" aria-hidden="true"></i>&nbsp;View resume</a>
             </div>
 
-            
+            <div class="contact-actions">
+                <a class="btn btn-info" href="https://www.linkedin.com/in/radhika-singh-10/" target="_blank" rel="noopener"><i class="bx bxl-linkedin" aria-hidden="true"></i>&nbsp;Message on LinkedIn</a>
+                <a class="btn btn-primary" href="https://github.com/radhika-singh-10/" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i>&nbsp;GitHub</a>
+            </div>
 
         </div>
     </section><!-- End Contact Section -->
@@ -893,7 +689,9 @@
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Radhika Singh</p>
+</footer>
 
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -904,9 +702,6 @@
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 <script src="assets/vendor/counterup/counterup.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/venobox/venobox.min.js"></script>
-<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 <script src="assets/vendor/typed.js/typed.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 
