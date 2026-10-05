@@ -1,853 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-<!--
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Radhika Singh</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    
-    <link href="" rel="icon">
-   
-
-    
-    <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-            rel="stylesheet">
-
-
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-
-    <link href="assets/css/style.css" rel="stylesheet">
-
-     =======================================================
-    * Template Name: iPortfolio - v1.4.1
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== 
-</head>
--->
 <head>
   <meta charset="utf-8">
-  <!-- Safe area for iPhone notch + proper scaling -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <!-- Let iOS treat it like an app-style page -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Status bar / address bar color -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0f19">
-  <!-- iOS link detection (we’ll add explicit tel/mail links instead) -->
-  <meta name="format-detection" content="telephone=no, email=no, address=no">
-
-  <title>Radhika Singh</title>
-  <meta name="description" content="Radhika Singh ">
-  <meta name="keywords" content="Radhika Singh, software engineer, AI, ML, distributed systems, portfolio">
-
-  <!-- Favicons -->
-  <!--<link rel="icon" href="assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">-->
+  <title>Radhika Singh | AI Software Engineer</title>
+  <meta name="description" content="Radhika Singh - AI Software Engineer building agentic AI systems, LLM inference platforms, secure software supply-chain automation, and scalable backend products.">
+  <meta name="keywords" content="Radhika Singh, AI software engineer, agentic AI, LLM inference, MCP, RAG, software supply chain security, backend engineering, portfolio">
   <link rel="icon" type="image/png" href="assets/img/RadhikaSinghIcon.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #11182b;
+      --panel-soft: #172033;
+      --text: #edf2ff;
+      --muted: #a8b3cf;
+      --line: rgba(255, 255, 255, 0.1);
+      --accent: #64d2ff;
+      --accent-2: #8fe388;
+      --max: 1120px;
+    }
 
+    * { box-sizing: border-box; }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    html { scroll-behavior: smooth; }
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, rgba(100, 210, 255, 0.14), transparent 34rem), var(--bg);
+      line-height: 1.65;
+    }
 
-  <!-- Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    a { color: inherit; text-decoration: none; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(11, 16, 32, 0.86);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand { font-weight: 800; letter-spacing: 0; }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    main { overflow: hidden; }
+
+    section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 76px 22px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      margin: 0 0 14px;
+    }
+
+    h1, h2, h3 { line-height: 1.14; margin: 0; }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      max-width: 760px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 20px;
+    }
+
+    h3 { font-size: 20px; }
+
+    .lead {
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 760px;
+      margin: 22px 0 0;
+    }
+
+    .hero-actions, .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--panel-soft);
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #08111f;
+      border: 0;
+    }
+
+    .portrait-card {
+      border: 1px solid var(--line);
+      background: rgba(17, 24, 43, 0.74);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .portrait-card img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    .portrait-card p { color: var(--muted); margin: 16px 0 0; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      padding-top: 0;
+    }
+
+    .metric, .card, .timeline-item {
+      border: 1px solid var(--line);
+      background: rgba(17, 24, 43, 0.82);
+      border-radius: 10px;
+    }
+
+    .metric { padding: 20px; }
+
+    .metric strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1.1;
+      color: var(--accent-2);
+    }
+
+    .metric span, .muted { color: var(--muted); }
+
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .card { padding: 24px; }
+
+    .card p { color: var(--muted); margin: 10px 0 0; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .timeline { display: grid; gap: 16px; }
+
+    .timeline-item { padding: 24px; }
+
+    .timeline-item header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .timeline-item time {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); }
+
+    li + li { margin-top: 8px; }
+
+    .section-intro { color: var(--muted); max-width: 760px; margin: -8px 0 28px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0, 0, 0, 0.18);
+    }
+
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr; padding-top: 56px; }
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .grid { grid-template-columns: 1fr; }
+      .nav-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 560px) {
+      section { padding: 54px 18px; }
+      .metrics { grid-template-columns: 1fr; }
+      .nav-links { gap: 10px; }
+    }
+  </style>
 </head>
-
 <body>
-
-<!-- ======= Mobile nav toggle button ======= -->
-<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-<!-- ======= Header ======= -->
-<header id="header">
-    <div class="d-flex flex-column">
-        <div class="profile">
-            <img src="assets/img/RadhikaSingh.png" alt="" class="img-fluid rounded-circle">
-            <h1 class="text-light"><a href="index.html"><h1 id="title">Radhika Singh</h1>
-							</a></h1>
-              <p class="text-light pl-4 ml-2"> MS-CS Recent Grad - UB</p>
-            <div class="social-links mt-3 text-center">
-                <a href="https://www.linkedin.com/in/radhika-singh-10/" class="linkedin" target="_blank"><i
-                        class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/radhika-singh-10/" class="github" target="_blank"><i
-                        class='bx bxl-github'></i></a>
-                 <a href="https://x.com/Radhika01586968" class="twitter" target="_blank"><i
-                            class='bx bxl-twitter'></i></a>
-                
-            </div>
-        </div>
-
-        <nav class="nav-menu">
-            <ul>
-                <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#education"><i class="bx bxs-school"></i> <span>Education</span></a></li>
-                <li><a href="#internships"><i class="bx bxs-briefcase"></i> <span>Work Experience </span></a></li>
-                <li><a href="#projects"><i class="bx bx-file"></i> <span>Projects</span></a></li>
-                <li><a href="#services"><i class="bx bx-medal"></i> Achievements</a></li>
-                <li><a href="#contact"><i class="bx bx-file"></i> Resume & Contact</a></li>
-
-            </ul>
-        </nav><!-- .nav-menu -->
-        <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top">Radhika Singh</a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-</header><!-- End Header -->
+  </nav>
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-        <h1 style="text-align:center;">Radhika Singh</h1>
-        <p> <span class="typed"
-                       data-typed-items=" MS-CS Grad - University at Buffalo,  Agentic AI, Responsible AI, GenAI + LLM, Fullstack Development, Distributed + Scalable Systems, Cloud Infrastructure, Ex-SE2 @ Dell Technologies"></span>
-        </p>
-    </div>
-</section><!-- End Hero -->
-
-<main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>About</h2>
-                <p></p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/img/RadhikaSingh-Github.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                    <h3></h3>
-                    <p class="font-italic">
-                     Hi, my name's Radhika Singh. I'm a recent Computer Science Graduate from the University at Buffalo. Before earning my master's, I worked at Dell Technologies for over three years as a Software Engineer, where I designed and scaled enterprise products used globally, focusing on delivering measurable impact and an exceptional customer experience. I'm now excited to bring my skills to an innovative, customer-focused team that solves high-impact problems.
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul>
-                             
-                              
-                              <li><i class="icofont-rounded-right"></i> <strong>Masters Degree:</strong> 
-                                 Masters in Science - Computer Science, University at Buffalo, SUNY
-                              </li>
-
-							  <li><i class="icofont-rounded-right"></i> <strong>Interested to collaborate as:</strong> 
-                                  Software Engineer, or AI/ML Engineer
-                              </li>
-                              
-                             
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul>
-                              <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> (716)910-7687</li>
-                              <li><i class="icofont-rounded-right"></i> <strong>Email:</strong>
-                                radhika.singh.10.01.98@gmail.com
-                              </li>
-                              <!-- <li><i class="icofont-rounded-right"></i> <strong>Citizen:</strong> Indian</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <p>
-                      <!-- I have always been fascinated by the world of computers and technology and love to 
-                      explore innovative solutions to solve real-world problems in the field of Science and Technology. 
-                      I regularly follow the breakthroughs and innovations that occur in this realm all over the globe
-                      like the invocation of GPT models in e-platforms
-                      to automate processes, and increase efficiency.  -->
-                      <br><br>
-                      <!-- My core interest is in <strong>Artificial Intelligence</strong>, which include fields like Machine Learning, Deep
-                      Learning, Computer Vision, Natural Language Processing, etc. Currently, I'm a Graduate student at
-                      State University of New York at Buffalo in Computer Science (Artificial Intelligence Track). -->
-                    </p>
-                </div>
-            </div>
-
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AI Software Engineer</p>
+        <h1>Building agentic AI systems for secure, scalable software platforms.</h1>
+        <p class="lead">I work across multi-agent workflows, LLM inference optimization, backend platforms, evaluation, observability, and customer-facing deployments for enterprise software supply-chain security.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button" href="https://drive.google.com/file/d/1dSMAqz0hOXaix-V0aAm4MQIYJH_Go6DO/view?usp=sharing" target="_blank" rel="noopener">View Resume</a>
         </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Facts & Information</h2>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                    <div class="count-box">
-                        <i class="icofont-ebook"></i>
-                        <span data-toggle="counter-up">3.7</span> 
-                        <p><strong>MS-CS </strong> University at Buffalo, SUNY</p>
-                    </div>
-                </div>
-
-		<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                    <div class="count-box">
-                        <i class="icofont-ebook"></i>
-                        <span data-toggle="counter-up">3.95</span>
-                        <p><strong>CSE - Btech </strong>K.I.I.T. University</p>
-                    </div>
-                </div>
-                    
-                
-
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="count-box">
-                        <i class="icofont-paper"></i>
-                        <span data-toggle="counter-up">1</span>
-                        <p><strong>White Paper</strong><br>Dell Technologies India Innovation Forum</p>
-                    </div>
-                </div>
-
-             
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-                    <div class="count-box">
-                        <i class="icofont-ebook"></i>
-                        <span data-toggle="counter-up">1</span>
-                        <p><strong>Patent-Filed</strong><br>Smart Framework to Autoheal Customer Order Experience Issues</br></p>
-                    </div>
-                </div> 
-            </div>
-
+        <div class="socials">
+          <a class="button" href="https://www.linkedin.com/in/radhika-singh-10/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/radhika-singh-10/" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="mailto:radhika.singh.10.01.98@gmail.com">Email</a>
         </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Technical Skills</h2>
-            </div>
-
-            <div class="row skills-content">
-
-                <div class="col-lg-4" data-aos="fade-up">
-
-                    <div class="progress">
-                        <span class="skill">C/C++, JAVA, C#, Python, Golang<i class="val"></i></span>
-
-                    </div>
-
-                    <div class="progress">
-                        <span class="skill"> PCF, AWS, Azure<i class="val"></i></span>
-
-                    </div>
-                    <div class="progress">
-                        <span class="skill">PySpark, Flask, Django, FastAPI <i class="val"></i></span>
-
-                    </div>
-
-                    <div class="progress">
-                        <span class="skill"> Git, CI/CD, Docker, Kubernetes  <i class="val"></i></span>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="progress">
-                        <span class="skill"> React, Javascript/Typescript, NodeJS, Angular <i class="val"></i></span>
-
-                    </div>
-
-
-                    <div class="progress">
-                        <span class="skill">Keras, Tensorflow, Pytorch<i class="val"></i></span>
-
-                    </div>
-                    <div class="progress">
-                        <span class="skill"> SQL, NoSQL, RediSearch<i class="val"></i></span>
-
-                    </div>
-		    
-
-                </div>
-
-                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="progress">
-                        <span class="skill">Kafka, RabbitMQ, IBMQueue<i class="val"></i></span>
-
-                    </div>
-
-                    <div class="progress">
-                        <span class="skill">Windows, Unix, Linux, PintOS <i class="val"></i></span>
-
-                    </div>
-		    
-		   <div class="progress">
-                        <span class="skill">ApacheFlow, MLFlow, KuberFlow <i class="val"></i></span>
-
-                    </div>
-                    
-
-                </div>
-
-            </div>
-
-        </div>
+      </div>
+      <aside class="portrait-card" aria-label="Profile summary">
+        <img src="assets/img/RadhikaSingh-Github.png" alt="Radhika Singh">
+        <p>MS Computer Science, University at Buffalo. Former Software Engineer at Dell Technologies. Current focus: agentic AI, LLM systems, secure automation, and backend/cloud platforms.</p>
+      </aside>
     </section>
-    <!-- ======= Skills End Section ======= -->
 
-
-    <!-- ======= Education Start Section ======= -->
-    <section id="education" class="resume">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education</h2>
-            </div>
-
-            <div class="row">
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Masters of Science - Computer Science</h4>
-                        <h5>2023 - 2025</h5>
-                        <p><em>State University of New York at Buffalo, NY - USA</em></p>
-                        <p>CGPA : 3.7/4.0</p>
-                        <p><strong>Focus:</strong> Research Track [AI Focus Area]</p>
-                        <p><strong>Capstone Project:</strong> Toxic In-Game Voice Chat Moderation using Multimodal LLMs.</p>
-                        <p><strong>Relevant Subjects:</strong> Analysis of Algorithms, Data Intensive Computing, Distributed Systems, Machine Learning, Computer Security, Deep Learning, Operating Systems, Reinforcement Learning, Computer Vision.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Bachelor of Technology - Computer Science</h4>
-                        <h5>2017 - 2021</h5>
-                        <p><em>Kalinga Institute of Industrial Technology, Bhubaneswar - India</em></p>
-                        <p>CGPA : 3.95/4.0</p>
-                        <p><strong>Activities:</strong> Mozilla Web Development Club.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="metrics" aria-label="Impact highlights">
+      <div class="metric"><strong>4+</strong><span>years software engineering experience</span></div>
+      <div class="metric"><strong>18 min</strong><span>reduced from agent workflow processing time</span></div>
+      <div class="metric"><strong>1M+</strong><span>developer scale targeted by remediation workflows</span></div>
+      <div class="metric"><strong>1</strong><span>patent filed for auto-healing customer order issues</span></div>
     </section>
-    <!-- ======= Education End Section ======= -->
 
-
-     <section id="internships" class="resume">
-        <div class="container">
-            <div class="section-title">
-                <h2>Work Experience</h2>
-            </div>
-            <div class="row">
-                
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Lineaje Inc</h4>
-                        <h5>May 2024 - Present</h5>
-                        <p><em>Software Engineer (Full-time)</em></p>
-                        <ul>
-                            <li>The enterprise platform required a scalable, autonomous interface to handle complex user interactions. Engineered a context-aware multi-agent system orchestrating distinct autonomous agent personas using React, TypeScript, FastAPI, and AWS with session-based memory. Successfully transitioned the platform to an AI-driven experience powered by collaborative agent networks.</li>
-                            <li>Policy enforcement across massive codebases required autonomous, high-throughput remediation loops. Developed parallelized agentic workflows utilizing n8n and MCP (Model Context Protocol) servers to autonomously detect violations and reason through complex remediation steps. Scaled automated agentic remediations to 1M+ developers while reducing end-to-end processing time by ~18 minutes.</li>
-                            <li>CI/CD security governance needed to advance from static scanning to active, autonomous fixing. Architected an agentic AI governance scheduler that autonomously evaluates PRs, writes compliant code fixes using LLMs, and pushes remediation PRs automatically. Achieved 90%+ automation of manual security reviews, with autonomous agents enforcing compliant fixes in under 120 seconds.</li>
-                            <li>Autonomous agents required optimized, low-latency reasoning engines for real-time policy evaluations. A/B tested localized models and migrated to a Dockerized vLLM deployment on AWS EC2, specifically optimized for batched, concurrent agent queries. Reduced agentic reasoning latency from 5 minutes to 10 seconds (~96.7% improvement).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>University at Buffalo</h4>
-                        <h5>Jan 2024 - May 2024</h5>
-                        <p><em>Graduate Research Assistant (Part-time)</em></p>
-                        <ul>
-                            <li>Policy-to-code remediation workflows lacked scalable intelligence. Researched and developed a scalable, context-aware LLM-RAG pipeline. Optimized enterprise compliance and code remediation workflows.</li>
-                            <li>Enterprise environments required clarity on local vs. cloud AI deployments. Evaluated performance benchmarks for LLM deployments focusing on latency and cost. Delivered strategic compliance and scalability insights for enterprise architecture.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Dell Technologies</h4>
-                        <img src="assets/img/dell.png" height="7%" width="7%" alt="">
-                        <br><br>
-                        <h5>2022 - 2024</h5>
-                        <p><em>Software Engineer 2 - IT</em></p>
-                        <ul>
-                            <li>Error logging architecture lacked high-throughput processing resulting in data loss. Architected a scalable PySpark streaming data pipeline extracting >100K error logs daily from PostgreSQL to MongoDB. Enhanced data accuracy and availability by 85%.</li>
-                            <li>High-priority issues required immediate visibility for stakeholders. Implemented a notification service using Java, ReactJS, RabbitMQ, and Kubernetes. Achieved 60.2% CSAT in FY24 Q2 and reduced errors/week by 1.5x.</li>
-                            <li>The post-order customer journey suffered from repetitive online UI issues. Innovated a Kappa architecture product using Java, NodeJS, and MongoDB. Reduced customer agent effort by 98%.</li>
-                            <li>Customer feedback lacked actionable semantic context extraction. Integrated LLMs, RAG vector databases, and RoBERTa. Improved the post-order customer journey to 78.2% CSAT.</li>
-                            <li>API latency was bottlenecking 100K+ daily records. Developed asynchronous map-reduce services and performed indexing. Increased API speed by 80% and auto-refreshed UX features in React.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Dell Technologies</h4>
-                        <img src="assets/img/dell.png" height="7%" width="7%" alt="">
-                        <br><br>
-                        <h5>2020 - 2022</h5>
-                        <p><em>Software Engineer 1 - IT</em></p>
-                        <ul>
-                            <li>High processing failures in the real-time data flow pipeline. Consumed Apache Kafka and RabbitMQ using Java and SQL Server for real-time processing. Decreased processing failures by ~65% in FY22 Q4.</li>
-                            <li>Client-server web application performance was lagging. Optimized performance utilizing lazy-loading and SOLID design patterns in Java and JavaScript. Reduced TTI to 1.83s, CLS to 0.05s, and LCP to 1.58s.</li>
-                            <li>The production deployment pipeline had significant risk due to massive unstructured metadata. Translated Python scripts into PostgreSQL and automated scheduling using PCF. Eradicated manual processes and mitigated the risk of deployment errors.</li>
-                            <li>Unmonitored internal systems caused excessive support failures (>10,000/day). Designed a fault-tolerant alert-logging mechanism using Java, JavaScript, and KQL. Provided real-time observability across multiple KPIs.</li>
-                            <li>Internal and external tools were untested for high traffic. Conducted performance testing using JMeter, Prometheus, and Grafana. Achieved a sustainable load of 1M DAU.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>High Radius</h4>
-                        <img src="assets/img/highradius.png" height="10%" width="10%" alt="">
-                        <br><br>
-                        <h5>2019 - 2020</h5>
-                        <p><em>Software Engineer Trainee</em></p>
-                        <ul>
-                            <li>The business needed predictive tooling for client payment behaviors. Developed an AI-based Fintech web app using Python, Flask, AWS, and JavaScript. Successfully delivered a supervised regression model predicting B2B payment dates reliably.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Ericsson</h4>
-                        <h5>2019</h5>
-                        <p><em>Trainee (Apprenticeship)</em></p>
-                        <ul>
-                            <li>Application deployments were slow and highly manual. Developed a modern CI/CD pipeline using AWS, Kubernetes, and Docker. Streamlined deployment processes and reduced overall release time by 70%.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up">
-                    <div class="resume-item">
-                        <h4>Aakar Software & Services</h4>
-                        <h5>2018 - 2019</h5>
-                        <p><em>Software Engineer Intern</em></p>
-                        <ul>
-                            <li>The monolithic React web application suffered from extremely slow load times. Leveraged lazy-loading concepts across the frontend architecture. Decreased the apparent load time of the application to near-zero (0.001ms).</li>
-                            <li>The weekly newsletter delivery was a highly manual workflow prone to delay. Automated the pipeline using Apache Airflow. Reduced manual effort by 90% and ensured 100% on-time delivery.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-		</div>
-	 </section>
-
-	
-
-	<!-- ======= Projects Section (same UX as Education/Work) ======= -->
-<section id="projects" class="resume">
-  <div class="container">
-    <div class="section-title">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up">
-        <div class="resume-item">
-          <h4>PromptStrike-CLI</h4>
-          <h5>Mar 2026</h5>
-          <p><em>Security analyzer for SaaS</em></p>
-          <ul><li>A CLI security analyzer for SaaS that detects prompt injection, unsafe tool usage, policy bypass, and data leakage using graph-based dependency analysis and LLM-assisted semantic checks.</li></ul>
+    <section id="about">
+      <p class="eyebrow">About</p>
+      <h2>Engineer at the intersection of AI systems, security, and production delivery.</h2>
+      <p class="section-intro">I build AI-driven products that need to work in real enterprise environments: secure, observable, deployable, and fast enough to matter. My recent work includes context-aware multi-agent systems, MCP-based parallel workflows, LLM inference benchmarking, Dockerized vLLM on AWS EC2, customer deployment support, and evaluation systems for agent reliability.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Current Work</h3>
+          <p>AI software engineering at Lineaje, focused on enterprise software supply-chain security, multi-agent remediation, LLM-backed product workflows, and customer-facing deployments.</p>
         </div>
-        <div class="resume-item">
-          <h4>EssayFish</h4>
-          <h5>Apr 2025 - May 2025</h5>
-          <p><em>Collaborators: Dheeraj Gundasani, Nageswara Rao Pasala, Arsalan Ali</em></p>
-          <ul><li>AI-generated essay detection system using Stockfish-inspired behavioral metrics (IPR, z-score). Leverages Qwen, Mistral, and LLaMA models.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>Raft Key-Value Store</h4>
-          <h5>Mar 2025 - May 2025</h5>
-          <p><em>Distributed key-value store</em></p>
-          <ul><li>Distributed key-value store implemented in Go using the Raft consensus protocol for fault tolerance.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>Toxic Audio Detection using (M)LLMs</h4>
-          <h5>Aug 2024 - May 2025</h5>
-          <p><em>Master's Thesis</em></p>
-          <ul><li>Testing framework using FastAPI to moderate audio content in children's games by finetuning multimodal LLMs.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>TrieSearchX</h4>
-          <p><em>High-performance search</em></p>
-          <ul><li>High-performance autocomplete search system (&lt;10ms) built with C++, MongoDB, and Cassandra, featuring a cache-optimized Trie and parallel query execution.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>PaperSnapAI</h4>
-          <h5>Nov 2024 - Mar 2025</h5>
-          <p><em>Research paper summarization tool</em></p>
-          <ul><li>Lightweight research paper summarization tool built with Next.js, T5 model, and FastAPI.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>DeepShield</h4>
-          <h5>Aug 2024 - Dec 2024</h5>
-          <p><em>Collaborator: Nageswara Rao Pasala</em></p>
-          <ul><li>Deepfake detection system utilizing Vision Transformers (ViT) and CNNs to identify image manipulations with confidence scores.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>GestureAI</h4>
-          <p><em>Collaborators: Dheeraj Gundasani, Pragnya Sree Ranganekar</em></p>
-          <ul><li>Real-time American Sign Language (ASL) gesture recognition using MediaPipe and LSTM.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>Grid-World Gymnasium using RL</h4>
-          <h5>Nov 2023 - Dec 2023</h5>
-          <p><em>Collaborator: Dheeraj Gundasani</em></p>
-          <ul><li>Custom RL environment following OpenAI Gym standards; solved using SARSA and Double Q-learning.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>ClimateSyncAI</h4>
-          <p><em>Collaborator: Nageswara Rao Pasala</em></p>
-          <ul><li>Global temperature trend analysis using K-Means clustering and SARIMAX time-series modeling for 13 city groups.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>NY-RailCon</h4>
-          <p><em>Multi-region railway database</em></p>
-          <ul><li>Multi-region, fault-tolerant railway management database built with CockroachDB.</li></ul>
-        </div>
-        <div class="resume-item">
-          <h4>Priority Scheduler using PintOS</h4>
-          <h5>Feb 2024 - Mar 2024</h5>
-          <p><em>Thread scheduling</em></p>
-          <ul><li>Implemented priority donation, preemption, and aging for thread scheduling in the PintOS kernel.</li></ul>
+        <div class="card">
+          <h3>Engineering Style</h3>
+          <p>I like owning the full path from ambiguous problem to working system: architecture, backend APIs, data flows, inference tradeoffs, evaluation, debugging, and production handoff.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- ======= Projects End Section ======= -->
+    </section>
 
-			
-<!--
-
-   <section id="portfolio" class="portfolio section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Projects</h2>
-      <p class="text-muted">A few things I’ve built and shipped. Filter by area:</p>
-    </div>
-
-
-    <div class="d-flex gap-2 flex-wrap mb-4" id="portfolio-filters">
-      <button class="btn btn-sm btn-outline-primary active" data-filter="*">All</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".ai">AI/ML</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".backend">Backend</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".systems">Distributed Systems</button>
-      <button class="btn btn-sm btn-outline-primary" data-filter=".frontend">Frontend</button>
-    </div>
-
-
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-
-      <div class="col-lg-4 col-md-6 portfolio-item ai frontend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="climate" href="assets/img/projects/climatesyncai-large.png" title="ClimateSyncAI">
-              <img src="assets/img/projects/climatesyncai-thumb.png" class="img-fluid" alt="ClimateSyncAI preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">ClimateSyncAI</h3>
-            <p class="project-summary">Time-series climate forecasting & anomaly detection with 13 SARIMAX clusters + Flask/Bootstrap dashboard.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">Python</span>
-              <span class="badge bg-light text-dark">SARIMAX</span>
-              <span class="badge bg-light text-dark">Flask</span>
-              <span class="badge bg-light text-dark">Docker</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="https://github.com/radhika-singh-10/ClimateSyncAI" target="_blank" class="btn btn-sm btn-primary">
-              <i class="bx bxl-github me-1"></i> Code
-            </a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projClimate">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
+    <section id="experience">
+      <p class="eyebrow">Experience</p>
+      <h2>Production AI, backend platforms, and enterprise engineering.</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <header><div><h3>Lineaje Inc</h3><p class="muted">Software Engineer</p></div><time>Sept 2025 - Present</time></header>
+          <ul>
+            <li>Build agentic AI systems for enterprise software supply-chain security, combining reasoning, retrieval, backend services, and cloud deployment for policy analysis, violation detection, and automated remediation.</li>
+            <li>Engineered a context-aware multi-agent chatbot using React, TypeScript, FastAPI, AWS, session caching, and real-time feedback tracking.</li>
+            <li>Developed parallel MCP workflows that reduced end-to-end processing time by about 18 minutes while improving reliability for remediation workflows targeting 1M+ developers.</li>
+            <li>Benchmarked 10+ LLMs and migrated inference to Dockerized vLLM on AWS EC2 with NVIDIA L4 GPUs, batching, and parallel execution, improving representative analysis latency from about 5 minutes to about 20 seconds.</li>
+            <li>Work with solution and security architects on customer deployments, environment-specific debugging, and product improvements from customer pain points.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <header><div><h3>University at Buffalo</h3><p class="muted">Research Aide</p></div><time>Jun 2024 - Aug 2024</time></header>
+          <ul>
+            <li>Researched toxic voice chat moderation using GPT-4o-audio and multimodal LLM pipelines, improving moderation precision by 20% and recall by 15% in experimental evaluations.</li>
+            <li>Fine-tuned Llama-2-7B-chat for safety-oriented classification workflows, improving recall by 20% with reproducible evaluation practices.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <header><div><h3>Dell Technologies</h3><p class="muted">Software Engineer 1 and 2</p></div><time>2020 - 2023</time></header>
+          <ul>
+            <li>Designed and shipped enterprise order-experience systems using .NET Core, C#, ReactJS, RabbitMQ, ELK, Kubernetes, and SQL Server, contributing to a 60.2% CSAT outcome.</li>
+            <li>Built event-driven services with Kafka, RabbitMQ, ASP.NET, and SQL Server to improve returns and post-order workflows, reducing failures and returns-related issues by up to 65%.</li>
+            <li>Led RBAC and prediction-pipeline improvements that reduced manual operational effort by 50% and improved stakeholder visibility into priority customer issues.</li>
+            <li>Filed a patent for a smart framework to auto-heal customer order experience issues and received 20 recognition awards across engineering and innovation programs.</li>
+          </ul>
+        </article>
       </div>
+    </section>
 
-
-      <div class="col-lg-4 col-md-6 portfolio-item systems backend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="nyrail" href="assets/img/projects/nyrailsync-large.png" title="NYRailSyncDB">
-              <img src="assets/img/projects/nyrailsync-thumb.png" class="img-fluid" alt="NYRailSyncDB preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">NYRailSyncDB</h3>
-            <p class="project-summary">Geo-distributed railway DB with CockroachDB (Postgres syntax), REGIONAL BY ROW, 3-node Docker Compose.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">CockroachDB</span>
-              <span class="badge bg-light text-dark">PostgreSQL</span>
-              <span class="badge bg-light text-dark">Docker Compose</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projNYRail">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
+    <section id="projects">
+      <p class="eyebrow">Selected Projects</p>
+      <h2>AI infrastructure, security, evaluation, and applied ML work.</h2>
+      <p class="section-intro">A few representative systems and research projects that show my current direction: agent reliability, repository intelligence, secure AI automation, LLM routing, and multimodal safety.</p>
+      <div class="grid">
+        <article class="card"><h3>ToolReliability</h3><p>Multi-tenant agent evaluation platform with MCP/OpenAPI integrations, persistent run history, distributed execution, CI regression checks, observability, latency, reliability, and failure drill-down workflows.</p><div class="tags"><span class="tag">Agent Evals</span><span class="tag">MCP</span><span class="tag">Observability</span></div></article>
+        <article class="card"><h3>RepoGraph-AI</h3><p>Repository intelligence system using React, TypeScript, FastAPI, Gemini API, MCP, and Tree-sitter to analyze 1,500+ source files with four validation gates, reducing unsafe AI code changes by 85%.</p><div class="tags"><span class="tag">Tree-sitter</span><span class="tag">FastAPI</span><span class="tag">Code Intelligence</span></div></article>
+        <article class="card"><h3>PromptStrike CLI</h3><p>Python, Typer, Ollama, DeepSeek, Qwen, Pydantic, AST, and NetworkX CLI for graph-based SAST and human-in-the-loop prompt/security evaluation, reaching about 98% accuracy by reducing false positives.</p><div class="tags"><span class="tag">Security</span><span class="tag">AST</span><span class="tag">LLM Eval</span></div></article>
+        <article class="card"><h3>JEV-AS-LLM</h3><p>Production-style LLM routing harness where model/provider decisions are based on intent, content sensitivity, performance needs, moderation, and guardrail decisions.</p><div class="tags"><span class="tag">LLM Routing</span><span class="tag">Guardrails</span><span class="tag">Moderation</span></div></article>
+        <article class="card"><h3>LQL Generator</h3><p>LangGraph, AWS Bedrock Claude Sonnet 4, FastAPI, and FAISS-based multi-agent workflow using persona intent, entity recognition, LQL mapping, and retrieval validation to improve English-to-LQL accuracy by 30%.</p><div class="tags"><span class="tag">LangGraph</span><span class="tag">Bedrock</span><span class="tag">FAISS</span></div></article>
+        <article class="card"><h3>Toxic Voice Chat Moderation</h3><p>Evaluated GPT-4o-audio, Whisper, AWS Transcribe, Perspective API, and fine-tuned Llama-2 pipelines for moderating toxic in-game voice chat with reproducible model comparison.</p><div class="tags"><span class="tag">Multimodal AI</span><span class="tag">Safety</span><span class="tag">FastAPI</span></div></article>
+        <article class="card"><h3>DRL Portfolio Optimization</h3><p>PPO-based portfolio optimization over top S&amp;P 500 assets from 2005-2024, achieving 25.3% cumulative return and a 1.2774 Sharpe ratio in backtesting.</p><div class="tags"><span class="tag">PPO</span><span class="tag">Finance ML</span><span class="tag">Backtesting</span></div></article>
+        <article class="card"><h3>Raft Key-Value Store</h3><p>Distributed key-value store implemented in Go using Raft consensus for leader election, replication, and fault-tolerant state management.</p><div class="tags"><span class="tag">Go</span><span class="tag">Raft</span><span class="tag">Distributed Systems</span></div></article>
       </div>
+    </section>
 
-
-      <div class="col-lg-4 col-md-6 portfolio-item ai backend">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="toxic" href="assets/img/projects/toxic-voice-large.png" title="Toxic Voice Moderation">
-              <img src="assets/img/projects/toxic-voice-thumb.png" class="img-fluid" alt="Toxic voice moderation preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">In-Game Voice Moderation</h3>
-            <p class="project-summary">Multimodal LLM pipeline with audio classifiers (WavLM, DistilBERT), evaluation scripts, and FastAPI test harness.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">WavLM</span>
-              <span class="badge bg-light text-dark">DistilBERT</span>
-              <span class="badge bg-light text-dark">FastAPI</span>
-              <span class="badge bg-light text-dark">MLFlow</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projToxic">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
+    <section id="skills">
+      <p class="eyebrow">Skills</p>
+      <h2>Tools I use to ship reliable AI products.</h2>
+      <div class="grid">
+        <div class="card"><h3>AI and LLM Systems</h3><p>LangGraph, LangChain, MCP, RAG, FAISS, Bedrock, vLLM, prompt evaluation, guardrails, moderation, PyTorch, TensorFlow, Keras.</p></div>
+        <div class="card"><h3>Backend and Cloud</h3><p>Python, FastAPI, C#, .NET Core, Java, Go, AWS, EC2, Docker, Kubernetes, REST APIs, CI/CD, GitHub Actions.</p></div>
+        <div class="card"><h3>Data and Platforms</h3><p>SQL, MongoDB, Neo4j, OpenSearch, Redis, PySpark, Kafka, RabbitMQ, event-driven workflows, observability, evaluation harnesses.</p></div>
+        <div class="card"><h3>Frontend and Product</h3><p>React, TypeScript, JavaScript, Node.js, customer deployment support, solution architecture collaboration, production debugging.</p></div>
       </div>
+    </section>
 
-
-      <div class="col-lg-4 col-md-6 portfolio-item backend systems">
-        <div class="project-card h-100">
-          <div class="project-media">
-            <a class="venobox" data-gall="tradeflow" href="assets/img/projects/tradeflow-large.png" title="TradeFlow">
-              <img src="assets/img/projects/tradeflow-thumb.png" class="img-fluid" alt="TradeFlow preview" loading="lazy" decoding="async" width="600" height="400">
-            </a>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">TradeFlow</h3>
-            <p class="project-summary">Multi-algo trading bot: FastAPI + RabbitMQ + Redis Pub/Sub, MongoDB storage, Streamlit dashboards.</p>
-            <div class="project-tags">
-              <span class="badge bg-light text-dark">Python</span>
-              <span class="badge bg-light text-dark">FastAPI</span>
-              <span class="badge bg-light text-dark">RabbitMQ</span>
-              <span class="badge bg-light text-dark">MongoDB</span>
-            </div>
-          </div>
-          <div class="project-actions">
-            <a href="#" class="btn btn-sm btn-primary"><i class="bx bxl-github me-1"></i> Code</a>
-            <a href="#" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projTradeFlow">
-              <i class="bx bx-expand-alt me-1"></i> Details
-            </a>
-          </div>
-        </div>
+    <section id="education">
+      <p class="eyebrow">Education and Recognition</p>
+      <div class="grid">
+        <div class="card"><h3>University at Buffalo, SUNY</h3><p>MS in Computer Science, 2023-2025. AI focus area. Capstone: Toxic In-Game Voice Chat Moderation using Multimodal LLMs.</p></div>
+        <div class="card"><h3>KIIT University</h3><p>B.Tech in Computer Science, CGPA 3.95/4.0. Activities included Mozilla Web Development Club.</p></div>
+        <div class="card"><h3>Dell Awards</h3><p>$1M AI initiative funding recognition, patent filed for auto-healing customer order issues, and 20 awards across engineering delivery, innovation, mentoring, and customer experience.</p></div>
+        <div class="card"><h3>Certifications</h3><p>Google Cloud Responsible AI and LLMs, AWS Fundamentals of ML and AI, Hugging Face AI Agents Fundamentals, LinkedIn Lean Six Sigma, Go, Cassandra, and prompt engineering coursework.</p></div>
       </div>
+    </section>
 
+    <section id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Open to AI engineering, backend/platform, and customer-facing product engineering roles.</h2>
+      <p class="section-intro">I am especially interested in teams building secure AI products, agentic workflows, inference platforms, evaluation infrastructure, and enterprise systems with real customer impact.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:radhika.singh.10.01.98@gmail.com">Email Me</a>
+        <a class="button" href="https://www.linkedin.com/in/radhika-singh-10/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="https://github.com/radhika-singh-10/" target="_blank" rel="noopener">GitHub</a>
+        <a class="button" href="https://drive.google.com/file/d/1dSMAqz0hOXaix-V0aAm4MQIYJH_Go6DO/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+  </main>
 
-  </div>
-</section>
-
-<div class="modal fade" id="projClimate" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">ClimateSyncAI</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <p>13 SARIMAX models clustered via K-Means; anomaly detection; Flask UI; Dockerized deploy. Improved forecast MAE by 17% vs baseline ARIMA.</p>
-      <ul class="mb-0">
-        <li>Stack: Python, Pandas, Statsmodels, Flask, Bootstrap</li>
-        <li>Infra: Docker, GitHub Actions (optional)</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="https://github.com/radhika-singh-10/ClimateSyncAI" target="_blank" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projNYRail" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">NYRailSyncDB</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>Multi-region CockroachDB cluster with Postgres-compatible schema; REGIONAL BY ROW; HA across 3 nodes via Docker Compose.</p>
-      <ul class="mb-0">
-        <li>Stack: CockroachDB, PostgreSQL syntax, Docker Compose</li>
-        <li>Focus: Availability, partitioning, strong consistency</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projToxic" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">In-Game Voice Moderation</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>Audio toxicity classification + LLM evaluation harness; measured precision/recall/F1; Fleiss’ Kappa for annotator agreement.</p>
-      <ul class="mb-0">
-        <li>Stack: WavLM, DistilBERT, FastAPI, MLflow</li>
-        <li>Focus: Safety, evaluation rigor, reproducibility</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="projTradeFlow" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">TradeFlow</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body">
-      <p>12+ concurrent strategies with RabbitMQ orchestration; Redis Pub/Sub for LTP stream; MongoDB archival; Streamlit dashboards.</p>
-      <ul class="mb-0">
-        <li>Stack: Python, FastAPI, RabbitMQ, Redis, MongoDB</li>
-        <li>Focus: Throughput, reliability, observability</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><i class="bx bxl-github me-1"></i> Repository</a>
-    </div>
-  </div></div>
-</div>
-</section>-->
-
-    <section id="services" class="resume section-bg">
-        <div class="container">
-            <div class="section-title">
-                <h2>Honors & Certifications</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <h3 class="resume-title">Honors & Awards</h3>
-                    <div class="resume-item">
-                        <h4>Dell Technologies & Industry Awards</h4>
-                        <ul>
-                            <li><strong>Shoutout Award</strong> (Jul 2023) - Producer for FY23 Q3 Mentor Circle at Dell Technologies.</li>
-                            <li><strong>Career Coaching Program</strong> (May 2023) - Selected for BetterUp program.</li>
-                            <li><strong>Patent Pending</strong> (Jun 2023) - Smart Framework to Auto-heal Customer Order Experiences Issues.</li>
-                            <li><strong>Shoutout Award</strong> (Nov 2022) - Support for the Order Status team at Dell.</li>
-                            <li><strong>Cheers Award</strong> (Aug 2022) - Successful launch of CRE and improved CSAT.</li>
-                            <li><strong>Bravo Award</strong> (Jun 2022) - Recognition for the synERGy Digital Platform team.</li>
-                            <li><strong>TIDE Hack the Cloud</strong> (2020) - Winner of Dell APAC Hackathon.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">Licenses & Certifications</h3>
-                    <div class="resume-item">
-                        <h4>Cloud, AI & Tech Certifications</h4>
-                        <ul>
-                            <li><strong>Introduction to Responsible AI</strong> - Google Cloud (Aug 2025)</li>
-                            <li><strong>Introduction to Large Language Models</strong> - Google Cloud (Aug 2025)</li>
-                            <li><strong>AWS Fundamentals of ML and AI</strong> - AWS (Jun 2025)</li>
-                            <li><strong>Learning Go & Introduction to Cassandra</strong> - LinkedIn (Mar 2025)</li>
-                            <li><strong>AI Agents Fundamentals</strong> - Hugging Face (Feb 2025)</li>
-                            <li><strong>Lean Six Sigma Foundations</strong> - LinkedIn (Jul 2024)</li>
-                            <li><strong>Transformer Models and BERT Model</strong> - Google Cloud (Jul 2024)</li>
-                            <li><strong>Introduction to Prompt Engineering for GenAI</strong> - LinkedIn (Jun 2024)</li>
-                            <li><strong>Power BI: Dashboards for Beginners</strong> - LinkedIn (Aug 2022)</li>
-                            <li><strong>Ericsson Certified Cloud Computing</strong> - Ericsson (Jul 2019)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Resume</h2>
-                <button type="button" class="btn btn-success"
-                        onclick="window.open ('https://drive.google.com/file/d/1dSMAqz0hOXaix-V0aAm4MQIYJH_Go6DO/view?usp=sharing','_blank')">
-                    <div class="icon"><i class="icofont-download"></i>&nbsp Download</div>
-                </button>
-                <br>
-                <br>
-                <button type="button" class="btn btn-primary"
-                        onclick="window.open ('https://drive.google.com/file/d/1dSMAqz0hOXaix-V0aAm4MQIYJH_Go6DO/view?usp=sharing','_blank')">
-                    <div class="icon"><i class="icofont-eye-alt"></i>&nbsp View</div>
-                </button>
-            </div>
-            <div style="position:relative;">
-                <img src="assets/gif/closure.gif" style='display:block;margin-left:auto;margin-right:auto;top:0;'
-                     frameBorder="0" allowFullScreen>
-            </div>
-
-            
-
-        </div>
-    </section><!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-
-
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="assets/vendor/counterup/counterup.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/venobox/venobox.min.js"></script>
-<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="assets/vendor/typed.js/typed.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
+  <footer>
+    <span>Designed and maintained by Radhika Singh.</span>
+  </footer>
 </body>
-
 </html>
