@@ -1435,28 +1435,64 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 /*--------------------------------------------------------------
+# Skills (grouped)
+--------------------------------------------------------------*/
+.skills-legend { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 14px; color: #5a6b85; margin-bottom: 22px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+.skill-group { background: #fff; border: 1px solid #dfe8f4; border-radius: 10px; padding: 22px 22px 18px; }
+.skill-group h3 { font-family: "Poppins", sans-serif; font-size: 17px; font-weight: 600; color: #173b6c; margin: 0 0 14px; }
+.skill-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+.skill-chip { display: inline-block; font-size: 14px; line-height: 1.2; padding: 7px 12px; border-radius: 999px; background: #eef3fb; color: #1e3a63; border: 1px solid transparent; }
+.skill-chip.recent { background: #e3f4fc; border-color: #149ddd; color: #0b4a68; font-weight: 600; }
+.skills-legend .skill-chip { padding: 4px 10px; font-size: 13px; }
+
+/*--------------------------------------------------------------
+# Work timeline: clearer markers and bullets
+--------------------------------------------------------------*/
+.resume .resume-item li::marker { color: #149ddd; }
+.resume .resume-item li strong { font-weight: 700; color: #0b1b33; }
+.resume .resume-item.current::before { background: #149ddd; border-color: #149ddd; box-shadow: 0 0 0 5px rgba(20, 157, 221, 0.22); }
+
+/*--------------------------------------------------------------
 # Dark theme
 --------------------------------------------------------------*/
 :root[data-theme="dark"] body { background: #0f1420; color: #d3dae8; }
 :root[data-theme="dark"] .section-bg { background: #131a2a; }
+
 :root[data-theme="dark"] .section-title h2,
 :root[data-theme="dark"] .about .content h3,
-:root[data-theme="dark"] :root[data-theme="dark"] .resume .resume-item h4,
+:root[data-theme="dark"] .resume .resume-title { color: #e8eefb; }
+
+:root[data-theme="dark"] .resume .resume-item h4,
+:root[data-theme="dark"] .resume .resume-item li strong,
 :root[data-theme="dark"] .facts .count-box span { color: #f1f5fd; }
+
 :root[data-theme="dark"] .facts .count-box p { color: #b7c3d9; }
 :root[data-theme="dark"] .facts .count-box { background: #171f31; border-color: #263046; box-shadow: none; }
 :root[data-theme="dark"] .facts .count-box i { color: #4cc2f1; }
+
 :root[data-theme="dark"] .resume .resume-item { border-left-color: #3b6fb8; }
 :root[data-theme="dark"] .resume .resume-item::before { background: #0f1420; border-color: #3b6fb8; }
+:root[data-theme="dark"] .resume .resume-item.current::before { background: #4cc2f1; border-color: #4cc2f1; box-shadow: 0 0 0 5px rgba(76, 194, 241, 0.22); }
 :root[data-theme="dark"] .resume .resume-item:hover { background: rgba(255, 255, 255, 0.04); box-shadow: none; }
 :root[data-theme="dark"] .resume .resume-item h5 { background: #1c2740; color: #dbe6fa; }
+:root[data-theme="dark"] .resume .resume-item li::marker { color: #4cc2f1; }
+
 :root[data-theme="dark"] .tag-chip { background: #1c2740; color: #bcd0f2; }
 :root[data-theme="dark"] .project-link { color: #6fb6ff; }
 :root[data-theme="dark"] .filter-btn { border-color: #34425f; color: #bcd0f2; }
 :root[data-theme="dark"] .filter-btn:hover { border-color: #4cc2f1; }
 :root[data-theme="dark"] .filter-btn.active { background: #4cc2f1; border-color: #4cc2f1; color: #0b0f19; }
 :root[data-theme="dark"] .filter-count,
-:root[data-theme="dark"] :root[data-theme="dark"] :root[data-theme="dark"] :root[data-theme="dark"] .skills .progress .skill { color: #d3dae8; }
+:root[data-theme="dark"] .site-footer { color: #93a2bd; }
+
+:root[data-theme="dark"] .skill-group { background: #171f31; border-color: #263046; }
+:root[data-theme="dark"] .skill-group h3 { color: #f1f5fd; }
+:root[data-theme="dark"] .skill-chip { background: #1f2a42; color: #c9d6ee; border-color: transparent; }
+:root[data-theme="dark"] .skill-chip.recent { background: rgba(76, 194, 241, 0.14); border-color: #4cc2f1; color: #d4f1fc; }
+:root[data-theme="dark"] .skills-legend { color: #93a2bd; }
+:root[data-theme="dark"] .skills-legend .skill-chip { background: rgba(76, 194, 241, 0.14); border-color: #4cc2f1; color: #d4f1fc; }
+
 :root[data-theme="dark"] .theme-toggle { border-color: rgba(255, 255, 255, 0.35); }
 
 @media (prefers-reduced-motion: reduce) {
